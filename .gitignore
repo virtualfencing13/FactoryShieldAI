@@ -1,0 +1,67 @@
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+backend/.venv/
+
+# Node & Frontend Build
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment & Secret Variables
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env
+!.env.example
+!frontend/.env.example
+
+# Local SQLite Databases
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+backend/fenceai_local.db
+backend/fenceai_test.db
+
+# Storage & Temporary Forensic Snapshots
+backend/storage/snapshots/*
+!backend/storage/snapshots/.gitkeep
+backend/snapshots/
+
+# Temporary / Scratch Test Artifacts
+backend/scratch/
+backend/test_cam_crop.jpg
+backend/bare_head_crop.jpg
+backend/head_crop.jpg
+backend/enhanced.jpg
+backend/no_helmet_region.jpg
+backend/annotated_result.jpg
+
+# OS Metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Large Exported Models (Keep active trained model best.pt)
+*.onnx
+*.engine
+*.tflite
+!backend/best.pt
